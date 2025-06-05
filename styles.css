@@ -46,6 +46,10 @@ header ul li a {
     margin-right: 2rem;
 }
 
+#close {
+    display: none;
+}
+
 aside {
     grid-area: aside;
     display: flex;
@@ -245,7 +249,7 @@ aside .icons .social-icons {
     }
 
 
-    .mobilenav {
+    header .mobilenav {
         display: flex;
         justify-content: space-between;
         width: 100%;
@@ -253,11 +257,11 @@ aside .icons .social-icons {
         align-items: center;
     }
 
-    nav {
+    header nav {
         display: none;
     }
 
-    .mobilenav h1 {
+    header .mobilenav h1 {
         color: #FCF6F5;
     }
 
@@ -268,16 +272,73 @@ aside .icons .social-icons {
         font-size: 3rem;
     }
 
-    main .header h1 {
-        font-size: 3rem;
-    }
-
     aside .icons .social-icons {
     gap:2rem;
     }
 
 
     /*nav activation*/
+    
+    .header-active #hamburger {
+        display: none;
+    }
+
+    .header-active #close {
+        display: block;
+        background-color: transparent;
+        border: none;
+        color: #2BAE66;
+        font-size: 3rem;
+    }
+
+    .header-active .mobilenav h1{
+        color: #2BAE66;
+    }
+
+    .header-active {
+        background-color: #FCF6F5;
+    }
+
+    .header-active .mobilenav {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin: 0 1rem 0 1.5rem;
+        align-items: center;
+        z-index: 999;
+    }
+
+    .header-active nav {
+        display: flex;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #FCF6F5;
+        width: 100vw;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .header-active nav ul li a {
+        color: #2BAE66;
+        font-weight: 500;
+        font-size: 1.5rem;
+        text-decoration: underline;
+    }
+
+    .header-active nav ul li {
+         margin: 1rem;
+    }
+
+    .header-active nav ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+}
 
 
 
@@ -380,6 +441,11 @@ aside .icons .social-icons {
     font-size: 1.5rem;
   }
 
+  aside .about p {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+
   .profile img {
     width: 100%;
   }
@@ -417,5 +483,4 @@ aside .icons .social-icons {
   .project .description p {
     font-size: 1.75rem;
   }
-}
 }

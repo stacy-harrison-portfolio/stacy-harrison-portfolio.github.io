@@ -13,6 +13,7 @@
             <div class="mobilenav">
                 <h1>Stacy Harrison</h1>
                 <button id="hamburger" aria-label="Toggle navigation">&#9776;</button>
+                <button id="close" aria-label="Close menu">&#10005;</button>
             </div>
 
             <nav>
@@ -22,8 +23,6 @@
                     <li><a href="#">Contact me</a></li>
                 </ul>
             </nav>
-
-
         </header>
         <aside>
             <div class="profile">
@@ -84,6 +83,26 @@
         </main>
     </div>
 
+    <script>
+  const hamburger = document.getElementById('hamburger');
+  const closeBtn = document.getElementById('close');
+  const header = document.querySelector('header');
+
+  // Hide the close button by default
+  closeBtn.style.display = 'none';
+
+  hamburger.addEventListener('click', () => {
+    header.classList.add('header-active');
+    hamburger.style.display = 'none';
+    closeBtn.style.display = 'block';
+  });
+
+  closeBtn.addEventListener('click', () => {
+    header.classList.remove('header-active');
+    hamburger.style.display = 'block';
+    closeBtn.style.display = 'none';
+  });
+</script>
 
 </body>
 </html>
