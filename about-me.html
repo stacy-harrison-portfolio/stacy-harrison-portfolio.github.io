@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="about-me.css">
+    <title>About Me</title>
+</head>
+<body>
+    <div class="layout">
+        <header>
+            <div class="mobilenav">
+                <h1><a href="index.html">Stacy Harrison</a></h1>
+                <button id="hamburger" aria-label="Toggle navigation">&#9776;</button>
+                <button id="close" aria-label="Close menu">&#10005;</button>
+            </div>
+
+            <nav>
+                <ul class="return">
+                    <li><a href="index.html">Stacy Harrison</a></li>
+                </ul>
+                <ul id="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="https://www.behance.net/stacyharrison1" target="_blank">Graphic design portfolio</a></li>
+                    <li><a href="mailto:coonii@proton.me">Contact me</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div class="about">
+                <h1>About me</h1>
+                <h3><strong>Hello there!</strong></h3>
+                <p>
+                    I’m Stacy — a casual frontend developer and a Graphic Design student at the Faculty of Visual Arts at UANL, in MTY, MX.
+                    <br><br>
+                    Right now, I’m getting the hang of HTML, CSS, and basic JavaScript, while gradually exploring responsive design, Git, and Bootstrap.
+                    <br><br>
+                    I love problem solving through a creative lens, and studying UI/UX naturally led me to wonder about the full development process. As a designer, two questions kept popping up in my head:<br>
+                    <strong>“How would a developer build this?”</strong>
+                    and
+                    <strong>“What should I keep in mind for my design to be implemented properly?”</strong>
+                    <br>
+                    So, what better way to learn than to actually start coding?
+                    <br><br>
+                    I’m excited to keep improving my skills through hands-on projects. This portfolio is a work in progress (like me), so feel free to look around and see what I’ve been building.
+                </p>
+            </div>
+            <div class="my-img">
+                <img src="images/me.png" alt="me">
+            </div>
+        </main>
+    </div>
+
+<script>
+  const hamburger = document.getElementById('hamburger');
+  const closeBtn = document.getElementById('close');
+  const header = document.querySelector('header');
+  const returnNav = document.querySelector('.return'); // Select the .return ul
+
+  // Hide the close button by default
+  closeBtn.style.display = 'none';
+
+  hamburger.addEventListener('click', () => {
+    header.classList.add('header-active');
+    hamburger.style.display = 'none';
+    closeBtn.style.display = 'block';
+
+    // Hide the .return element when navbar is active
+    if (returnNav) {
+      returnNav.style.display = 'none';
+    }
+  });
+
+  closeBtn.addEventListener('click', () => {
+    header.classList.remove('header-active');
+    hamburger.style.display = 'block';
+    closeBtn.style.display = 'none';
+
+    // Show .return again if needed (optional)
+    if (returnNav) {
+      returnNav.style.display = 'flex'; // or 'block', depending on layout
+    }
+  });
+</script>
+
+
+
+</body>
+</html>

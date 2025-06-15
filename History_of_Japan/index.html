@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>History of Japan</title>
+</head>
+<body>
+    <main id="main">
+    <div class="header">
+        <div class="container">
+            <h1 id="title">history of japan</h1>
+            <p>By Bill Wurtz</p>
+        <div id="img-div">
+            <img src="images/japan.jpg" alt="Japan" id="image">
+            <div id="img-caption">
+            <p>This is the tumbnail of the video </p>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <section>
+        <div class="container">
+            <h2 id="tribute-info">Here's a summary of how Japan came to be</h2>
+            <ul>
+                <li><span>-40,000</span>Japan exists!</li>
+                <li><span>-12,000</span>Japan becomes an island</li>
+                <li><span>-10,000</span>Now there's people in Japan</li>
+                <li><span>-500</span>Bronze age</li>
+                <li><span>200</span>Rice kingdoms are a thing</li>
+                <li><span>593-604</span>Buddhism exists!</li>
+                <li><span>645</span>Taika reforms exists!</li>
+                <li><span>700</span>Japan is Japan</li>
+                <li><span>711</span>Kojiki exists!</li>
+                <li><span>720</span>Oh shit, new book release (Nihon Shoki)</li>
+                <li><span>794</span>Kyoto is the new capital</li>
+                <li><span>1000</span>Hire a samurai</li>
+                <li><span>1192</span>Shogunate exists! (military government of samurai)</li>
+                <li><span>1266</span>Mongols invade China</li>
+                <li><span>1464</span>Oh shit, new shogunate</li>
+                <li><span>1560</span>Europe sells stuff to Japan</li>
+                <li><span>1590</span>Toyotomi Hideyoshi conquers Japan</li>
+                <li><span>1603</span>Edo exists!</li>
+                <li><span>1639</span>Country is closed</li>
+                <li><span>1853</span>Knock knock. It's the United States.</li>
+                <li><span>1868</span>Shogunate is overthroned</li>
+                <li><span>1869</span>Tokyo is the capital now</li>
+                <li><span>1894</span>Japan conquers a lot of stuff</li>
+                <li><span>1902</span>Japan and the UK make an alliance</li>
+                <li><span>1904</span>Russo-Japanese war</li>
+                <li><span>1914</span>WW1</li>
+                <li><span>1919</span>Japan joins the League of Nations</li>
+                <li><span>1939</span>WW2</li>
+                <li><span id="year"></span>You are here! (not specifically in Japan maybe)</li>
+            </ul>
+        </div>
+    </section>
+
+    <script>
+        // Get the current year
+        const currentYear = new Date().getFullYear();
+        // Insert it into the span with id="year"
+        document.getElementById("year").textContent = currentYear;
+    </script>
+    <footer>
+        <h1>You can watch the full video <a id="tribute-link" href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DMh5LY4Mz15o&psig=AOvVaw17UD9suWVp3fHo-p0csSC1&ust=1743809049082000&source=images&cd=vfe&opi=89978449&ved=0CBgQjhxqFwoTCMjVkM6MxYwDFQAAAAAdAAAAABAE" target="_blank">here</a>. It's pretty great.</h1>
+    </footer>
+</main>
+</body>
+</html>

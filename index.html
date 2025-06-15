@@ -18,15 +18,15 @@
 
             <nav>
                 <ul id="nav-menu">
-                    <li><a href="#">About me</a></li>
+                    <li><a href="about-me.html">About me</a></li>
                     <li><a href="https://www.behance.net/stacyharrison1" target="_blank">Graphic design portfolio</a></li>
-                    <li><a href="#">Contact me</a></li>
+                    <li><a href="mailto:coonii@proton.me">Contact me</a></li>
                 </ul>
             </nav>
         </header>
         <aside>
             <div class="profile">
-                <img src="images/me.png" alt="me!">
+                <img src="images/profile.png" alt="me!">
                 <h1>Stacy Harrison's<br>Code Portfolio</h1>
                 <p>(that's me!)</p>
             </div>
@@ -35,9 +35,8 @@
             </div>
             <div class="icons">
                 <div class="social-icons">
-                    <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                    <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
-                    <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="your-cv.pdf" target="_blank"><i class="fas fa-file-alt"></i></a>
+                    <a href="mailto:coonii@proton.me"><i class="fas fa-envelope"></i></a>
                     <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
                 </div>
 
@@ -48,31 +47,43 @@
                 <h1>My projects</h1>
             </div>
             <section>
-                <div class="project">
+                <div class="project" id="Blogr">
                     <div class="thumbnail">
-                        <img src="" alt="">
+                        <img src="images/blogr_thumbnail.jpg" alt="">
                     </div>
                     <div class="description">
-                        <h1 class="project-name">This is filler text!</h1>
-                        <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus est qui eveniet quibusdam repudiandae dolore impedit maiores alias accusantium, nobis explicabo quod quas. Vel velit architecto quidem enim officia atque.</p>
+                        <h1 class="project-name">Blogr Landing Page</h1>
+                        <p class="project-description">This is a simple landing page challenge from Frontend Mentor I did with HTML and CSS. <span>The hamburger menu isn't interactive yet for the lack of JavaScript but I'm on it ;P My biggest challenge with this one was the placement of the images in the original design. Get your shit together Graphic Designers.</span></p>
                     </div>
                 </div>
-                                <div class="project">
+
+                <div class="project" id="Japan">
                     <div class="thumbnail">
-                        <img src="" alt="">
+                        <img src="images/Japan_thumbnail.png" alt="">
                     </div>
                     <div class="description">
-                        <h1 class="project-name">This is filler text!</h1>
-                        <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus est qui eveniet quibusdam repudiandae dolore impedit maiores alias accusantium, nobis explicabo quod quas. Vel velit architecto quidem enim officia atque.</p>
+                        <h1 class="project-name">History of Japan by Bill Wurtz</h1>
+                        <p class="project-description">This is a basic timeline and summary I made of the video "History of Japan" by Bill Wurtz, an incredibly funny and overly <span>chill guy who makes masterpieces with ocasional jingles. This one was for my freecodecamp 'Tribute Page' crtification project for their 'Responsive Web Design' course.</span></p>
                     </div>
                 </div>
-                                <div class="project">
+
+                <div class="project" id="Recipe">
                     <div class="thumbnail">
-                        <img src="" alt="">
+                        <img src="images/recipe_thumb.jpg" alt="simple_recipe_webpage_thumbnail">
                     </div>
                     <div class="description">
-                        <h1 class="project-name">This is filler text!</h1>
-                        <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus est qui eveniet quibusdam repudiandae dolore impedit maiores alias accusantium, nobis explicabo quod quas. Vel velit architecto quidem enim officia atque.</p>
+                        <h1 class="project-name">Simple Recipe Page</h1>
+                        <p class="project-description">This is a simple recipe page I made as a challenge from Frontend Mentor using basic HTML and CSS. It was one of my first projects!</p>
+                    </div>
+                </div>
+
+                <div class="project" id="Code-Portfolio">
+                    <div class="thumbnail">
+                        <img src="images/Portfolio_thumbnail.png" alt="">
+                    </div>
+                    <div class="description">
+                        <h1 class="project-name">My Portfolio</h1>
+                        <p class="project-description">This is where I store all my up-to-date coded websites using HTML, CSS and JavaScript</p>
                     </div>
                 </div>
 
@@ -83,42 +94,57 @@
         </main>
     </div>
 
-    <div class="PopOverlay">
-        <div class="PopUp">
-            <button class="close-butt">&#10005;</button>
-            <div class="popup-thumbnail">
-                <img src="" alt="">
-            </div>
-            <div class="popup-content">
-                <h1 class="project-name">This is filler text!</h1>
-                <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta illum ipsum laborum fugit ullam odio, modi qui itaque officiis, tempore totam porro nostrum, tenetur culpa odit. Mollitia, nesciunt possimus! Ad!</p>
-            </div>
-            <div class="button-wrap">
-                <button class="probutt">Go to project</button>
+    <div class="popup-wrap">
+        <div class="PopOverlay" id="Blogr-Popup">
+            <div class="PopUp">
+                <button class="close-butt">&#10005;</button>
+                <div class="popup-thumbnail">
+                    <img src="images/blogr_thumbnail.jpg" alt="blogr_thumbnail">
+                </div>
+                <div class="popup-content">
+                    <h1 class="project-name">Blogr Landing Page</h1>
+                    <p class="description">This is a simple landing page challenge from <a href="https://www.frontendmentor.io/challenges/blogr-landing-page-EX2RLAApP">Frontend Mentor</a> I did with HTML and CSS. The hamburger menu isn't interactive yet for the lack of JavaScript. My biggest challenge with this one was the placement of the images in the original design.</p>
+                </div>
+                <form class="button-wrap">
+                    <button class="probutt" id="blogr-button">Go to project</button>
+                </form>
             </div>
         </div>
+
+        <div class="PopOverlay" id="Japan-Popup">
+            <div class="PopUp">
+                <button class="close-butt">&#10005;</button>
+                <div class="popup-thumbnail">
+                    <img src="images/Japan_thumbnail.png" alt="Japan_thumbnail">
+                </div>
+                <div class="popup-content">
+                    <h1 class="project-name">History of Japan by Bill Wurtz</h1>
+                    <p class="description">This is a basic timeline and summary I made of the video <a href="https://www.youtube.com/watch?v=Mh5LY4Mz15o">"History of Japan"</a> by <a href="https://www.youtube.com/@billwurtz">Bill Wurtz</a>, an incredibly funny guy who makes cool videos with ocasional jingles. This one was for my <a href="https://www.freecodecamp.org">freecodecamp</a> certification project for their <a href="https://www.freecodecamp.org/learn/2022/responsive-web-design/">'Responsive Web Design'</a> course.</p>
+                </div>
+                <form class="button-wrap">
+                    <button class="probutt" id="japan-button">Go to project</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="PopOverlay" id="Recipe-Popup">
+            <div class="PopUp">
+                <button class="close-butt">&#10005;</button>
+                <div class="popup-thumbnail">
+                    <img src="images/recipe_thumb.jpg" alt="">
+                </div>
+                <div class="popup-content">
+                    <h1 class="project-name">Simple Recipe Page</h1>
+                    <p class="description">This is a simple recipe page I made as a challenge from <a href="https://www.frontendmentor.io/challenges/recipe-page-KiTsR8QQKm">Frontend Mentor</a> using basic HTML and CSS. It was one of my first projects!</p>
+                </div>
+                <form class="button-wrap">
+                    <button class="probutt" id="recipe-button">Go to project</button>
+                </form>
+            </div>
+        </div>
+
     </div>
 
-    <script>
-  const hamburger = document.getElementById('hamburger');
-  const closeBtn = document.getElementById('close');
-  const header = document.querySelector('header');
-
-  // Hide the close button by default
-  closeBtn.style.display = 'none';
-
-  hamburger.addEventListener('click', () => {
-    header.classList.add('header-active');
-    hamburger.style.display = 'none';
-    closeBtn.style.display = 'block';
-  });
-
-  closeBtn.addEventListener('click', () => {
-    header.classList.remove('header-active');
-    hamburger.style.display = 'block';
-    closeBtn.style.display = 'none';
-  });
-</script>
-
+    <script src="script.js"></script>
 </body>
 </html>

@@ -1,0 +1,181 @@
+html {
+    background-color: #f2e4d8;
+    display: table;
+    margin: auto;
+    font-size: 16px;
+    color: hsl(24, 5%, 18%);
+}
+
+body {
+    background-color: white;
+    max-width: 733px;
+    padding: 2em;
+    border-radius: 1%;
+    text-justify: auto;
+
+    /*
+    font-family: "Young Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+    */
+
+
+    /* 
+      font-family: "Outfit", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  */
+
+}
+
+h1, h2 {
+    font-family: "Young Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 0rem;
+}
+
+img {
+    width: 100%;
+    border-radius: 1%;
+}
+
+.prep {
+    background-color: #fef7fd;
+    padding: 1em 0em 1em 0em;
+}
+
+.prep h3 {
+    color: hsl(332, 51%, 32%);
+    font-family: "Outfit", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    padding: 0em 0em 0em 1.5em;
+
+}
+
+.prep, ul, li {
+    margin-bottom: 1em;
+    margin-left: 1%;
+}
+
+.prep ul li {
+    padding-left: 1em;
+}
+
+.prepa {
+    margin-bottom: -2em;
+}
+
+h2 {
+    color: hsl(14, 45%, 36%);
+    font-size: 2em;
+    margin-bottom: auto;
+    
+}
+
+p, li {
+    font-family: "Outfit", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 1.1rem;
+}
+
+.ingredients {
+    border-bottom: 1px solid hsl(0, 0%, 50%, .5);
+    padding: 1em 0em 0em;
+    margin-bottom: 2em;
+}
+
+.ingredients ul {
+    padding: 1em;
+    margin-top: auto;
+}
+
+.instructions {
+    border-bottom: 1px solid hsl(0, 0%, 50%, .5);
+    padding: 0em 0em 1em 0em;
+    margin-bottom: 2em;
+}
+
+table {
+    font-family: "Outfit", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 1.1rem;
+    width: 100%; 
+    border-collapse: collapse; /* Remove extra spaces between table cells */
+}
+
+td {
+    width: 50%; 
+    text-align: left; 
+    padding: 1em; /* Add padding for better spacing */
+}
+
+.value {
+    font-weight: bold; 
+    color: brown; 
+}
+
+tr:not(:last-child) {
+    border-bottom: 1px solid hsl(0, 0%, 50%, 0.5); /* Add a border to all rows except the last */
+}
+
+
+
+ol {
+    list-style: none; /* Remove default list styling */
+    counter-reset: list-counter; /* Reset custom counter */
+    padding-left: 1.5em; /* Add padding to align text properly */
+    margin-left: -1.2em;
+}
+
+ol li {
+    counter-increment: list-counter; /* Increment custom counter */
+    position: relative;
+    padding-left: 1.5em; /* Space between numbers and text */
+}
+
+ol li::before {
+    content: counter(list-counter) "."; /* Add the custom number */
+    position: absolute;
+    left: 0; /* Align to the left */
+    font-weight: bold; /* Bold text */
+    color: brown; /* Brown color */
+}
+
+
+
+
+@media (max-width: 733px) {
+
+
+    body {
+       margin: auto;
+    }
+
+    h1 {
+        font-size: 2.3em;
+        line-height: 1em;
+        margin-bottom: .75em;
+    }
+
+    .prep {
+        margin-top: 2em;
+    }
+
+    img {
+        width: 100vw;
+        margin-left: calc(-2em); /* Offset the body's padding */
+        margin-right: calc(-2em); /* Offset the body's padding */
+        margin-top: calc(-2em);
+        border-radius: 0;
+    }
+    
+}

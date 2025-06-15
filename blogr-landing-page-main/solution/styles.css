@@ -1,0 +1,602 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: Overpass;
+    overflow-x: hidden;
+}
+
+/*main section*/
+
+.head {
+    position: relative;
+    background: linear-gradient(to right, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
+    padding-bottom: 3em;
+    border-radius: 0em 0em 0em 4em;
+    height: 30em;
+    width: 100%;
+    overflow: hidden;
+}
+
+.head img {
+    position: absolute;
+    width: 200%;
+    transform: translate(-19%, -42%);
+    z-index: -1; /* Moves the image behind the text */
+}
+
+header, main {
+    position: relative;
+    z-index: 1; /* Ensures text appears in front of the image */
+    margin-left: 12.5%;
+    margin-right: 12.5%;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Style the dropdown button */
+.button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+    padding: 0.5em 1em;
+}
+
+/* Hide dropdown content by default */
+.content {
+    display: none;
+    position: absolute;
+    background: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    min-width: 150px;
+    top: 100%;
+    left: 0;
+}
+
+/* Dropdown items styling */
+.content a {
+    display: block;
+    padding: 0.5em 1em;
+    color: black;
+    text-decoration: none;
+}
+
+.content a:hover {
+    background: lightgray;
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .content {
+    display: block;
+}
+
+/* Alternative: Use :focus-within to support keyboard navigation */
+.dropdown:focus-within .content {
+    display: block;
+}
+
+header h1 a  {
+    color: white;
+    text-decoration: none;
+    font-size: 1.75em;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-right: 1em;
+}
+
+header {
+    display: flex;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 1.5em 0em; 
+}
+
+.space {
+    justify-content: space-between; 
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 1.5em 0em; 
+}
+
+.menu-toggle {
+    display: none;
+}
+
+.dropdowns {
+    display: flex;
+    align-items: center;
+}
+
+.dropdowns div {
+    margin-top: .5em;
+}
+
+.log {
+    display: flex;
+    gap: 1em;
+}
+
+.head main nav .buttons button.lm{
+    background: none;
+    border: 1px solid white;
+    border-radius: 5em;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+    padding: 0.5em 1em;
+
+}
+
+.head main nav .buttons button.lm:hover {
+    background: white;
+    border: none;
+    color: hsl(353, 100%, 62%);
+    font-size: 1em;
+    cursor: pointer;
+    padding: 0.5em 1em;
+    border-radius: 5em;
+  }
+
+
+.head main nav .buttons button.sff{
+    background: white;
+    border: none;
+    color: hsl(353, 100%, 62%);
+    font-size: 1em;
+    cursor: pointer;
+    padding: 0.5em 1em;
+    border-radius: 5em;
+    font-weight: bold;
+}
+
+.head main nav .buttons button.sff:hover {
+    background: rgba(255, 255, 255, 0.33);
+    border: none;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+    padding: 0.5em 1em;
+    border-radius: 5em;
+}
+
+.head main nav .buttons {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+
+}
+
+.head main nav {
+    margin-top: 2.5em;
+}
+
+
+
+
+
+
+main h1, p, nav {
+    text-align: center;
+}
+
+main h1, p {
+    color: white;
+}
+
+main h1 {
+    font-size: 3.5em;
+    font-weight: 500;
+    letter-spacing: -2px;
+}
+
+main p {
+    font-weight: 200;
+    margin-top: -1.5em;
+}
+
+main {
+    margin-top: 5em;
+}
+
+.main button .sff {
+    background-color: transparent;
+}
+
+.button-login, .button-signup {
+    display: inline-flex; 
+    align-items: center; 
+    justify-content: center; 
+    text-decoration: none; 
+    font-size: 1em;
+    height: 100%; 
+}
+
+.button-login {
+    background: none;
+    border: none;
+    color: white;
+    margin-top: 1em;
+}
+
+.button-signup {
+    background-color: white;
+    color: hsl(353, 100%, 62%);
+    border-radius: 50px;
+    border: none;
+    padding: 0.8em 2.4em;
+    font-weight: 800;
+    margin-left: 0.5em;
+}
+
+.button-signup:hover {
+    background-color: rgba(255, 255, 255, 0.33);
+    color: white;
+    border-radius: 50px;
+    border: none;
+    padding: 0.8em 2.4em;
+    font-weight: 800;
+    margin-left: 0.5em;
+}
+
+section h1, h2{
+    color: hsl(208, 49%, 24%);
+}
+
+section p {
+    color: hsl(207, 13%, 34%);
+    text-align: left;
+    line-height: 1.9em;
+}
+
+
+.sec1 {
+    padding-bottom: 10%;
+    max-width: 2500px;
+    margin-right:auto;
+    margin-left:auto;
+
+}
+
+.sec1 h1 {
+    text-align: center;
+    font-size: 2.5em;
+    font-weight: 600;
+    margin-top: 3em;
+    position: relative;
+    margin-bottom: 5%;
+}
+
+.sec1 .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.sec1 .container div:first-child {
+    flex: 1;
+    max-width: 39%;
+    padding-left: 12.5%;
+    padding-right: 5%;
+    z-index: 2; /* Ensures text stays above the image */
+}
+
+.sec1 .container div:last-child {
+    flex: 1;
+    max-width: 60%;
+    position: relative;
+    height: auto;
+}
+
+.sec1 .container div:last-child img {
+    max-width: none;
+    width: 100%; /* Make the image larger than its container */
+    position: absolute;
+    left: 60%;
+    top: 60%;
+    transform: translate(-50%, -50%); /* Keeps the image centered */
+    z-index: 1; /* Places the image behind text */
+    pointer-events: none; /* Ensures the image doesn’t interfere */
+}
+
+
+
+.sec2 {
+    display: flex;
+    align-items: center;
+}
+
+.sec2 .container {
+    display: flex;
+    position: relative;
+    z-index: 2;
+    margin: 0 auto;
+    align-items: center;
+    max-width: 2000px;
+}
+
+.sec2 .background {
+    background-image: linear-gradient(hsl(237, 17%, 21%), hsl(237, 23%, 32%));
+    height: 25em;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 0em 5em 0em 5em;
+    position: absolute;
+    z-index: 1;
+}
+
+.sec2 .background img {
+    position: relative;
+
+    top: -130%;
+}
+
+.sec2 .container .content2 p{
+    color: white;
+    margin-right: 5em;
+}
+
+.sec2 .container .content2 h1 {
+    color: white;
+    font-size: 2.5em;
+    font-weight: 400;
+    margin: 0;
+
+}
+
+.sec2 .img,
+.sec2 .content2 {
+  flex: 1 1 50%;
+  box-sizing: border-box;
+}
+
+.sec2 .img img {
+    max-width: 552px;     
+    width: 100%;   
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+
+
+
+.sec3 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 2500px;
+}
+
+.sec3 .img {
+    flex: 1;
+    max-width: 100%;
+}
+
+.sec3 img {
+    position: relative;
+    justify-content: center;
+    width: 100%;
+}
+
+.sec3 .container {
+    flex: 1;
+    max-width: 100%;
+    margin-right: 5em;
+}
+
+@media (min-width: 650px) and (max-width: 900px) {
+    .sec3 {
+        margin-top: 10%;
+    }
+}
+
+
+
+
+
+footer {
+    background-color: hsl(240, 10%, 16%);
+    border-radius: 0em 5em 0em 0em;
+    margin-bottom: 0px;
+    margin-top: 5%;
+
+}
+
+footer .container {
+    display: flex;
+    justify-content: center; /* <-- centers items horizontally */
+    gap: 10%;
+    padding: 2em;
+}
+
+
+footer h1 a  {
+    color: white;
+    text-decoration: none;
+    font-size: 1.4em;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: white;
+    opacity: 70%;
+}
+
+footer ul li {
+    list-style: none;
+    margin-bottom: 1em;
+
+}
+
+footer h3 {
+    margin-bottom: 2em;
+    color: white;
+}
+
+
+@media (min-width: 200px) and (max-width: 750px) {
+
+    header nav {
+        justify-content: space-between; 
+    }
+
+    .dropdown,
+    .log {
+      display: none;
+    }
+  
+    .menu-toggle {
+      display: block;
+      font-size: 2em;
+      background: none;
+      border: none;
+      color: white;
+      cursor: pointer;
+      
+    }
+
+    .space {
+        display: none;
+    }
+  
+    .navtop {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+    }
+  
+
+    header, main {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .head {
+        height: 40em;
+    }
+
+    .head img {
+        position: absolute;
+        width: 250%;
+        transform: translate(-20%, -30%);
+        z-index: -1; /* Moves the image behind the text */
+    }
+
+    .sec1 .container {
+        display: block;
+      }
+    
+      .sec1 .container div:first-child {
+        max-width: 100%; 
+        padding-left: 5%; 
+        padding-right: 5%;
+        z-index: auto;
+        text-align: center;
+        padding-bottom: 5%;
+      }
+
+      .sec1 .container div p {
+        text-align: center;
+      }
+    
+      .sec1 .container div:last-child {
+        max-width: 100%;
+        justify-content: center;
+        margin: 0 auto;
+      }
+    
+      .sec1 .container div:last-child img {
+        position: static;
+        width: 90%;   
+        transform: translateX(16%);   /* remove translate */
+      }
+
+      .sec1 .container {
+        display: flex;
+        flex-direction: column-reverse;
+      }
+
+
+      .sec2 {
+        display: block;
+        align-items: center;
+        position: relative;
+        margin-bottom: 10%;
+    }
+
+    .sec2 .container {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 15%;
+        margin: 0 5%;
+    }
+
+
+    .sec2 .container .content2 h1, .sec2 .container .content2 p {
+        text-align: center;
+        justify-content: center;
+    }
+
+    .sec2 .container .content2 p {
+        margin: 0 auto;
+    }
+
+    .sec2 .background {
+        position: absolute;
+        bottom: 0;
+        height: 35em;
+    }
+
+    .sec3 {
+        display: block;
+        padding-bottom: 7%;
+    }
+
+    .sec3 h2, .sec3 p {
+        text-align: center;
+    }
+
+    .sec3 .container {
+        margin-right: 5%;
+        margin-left: 5%;
+    }
+
+    footer .container {
+        display: block;
+        text-align: center;
+    }
+
+    footer .container h3 {
+        margin-bottom: 1em;
+
+    }
+
+    footer h1 {
+        margin-bottom: 2em;
+    }
+
+    footer ul {
+        padding: 0em;
+    }
+
+    footer {
+        padding-bottom: 2em;
+    }
+
+
+    
+}
+  
