@@ -51,29 +51,6 @@ window.addEventListener("DOMContentLoaded", () => {
     window.open('blogr-landing-page-main/solution/index.html', '_blank');
   });
 
-//Japan-Popup
-
-window.addEventListener("DOMContentLoaded", () => {
-  const blogrTrigger = document.getElementById("Japan");
-  const closeBtn = document.querySelector("#Japan-Popup .close-butt");
-
-  blogrTrigger.addEventListener("click", () => {
-    const popup = document.getElementById("Japan-Popup");
-    popup.style.display = "flex";
-  });
-
-  closeBtn.addEventListener("click", () => {
-    const popup = document.getElementById("Japan-Popup");
-    popup.style.display = "none";
-  });
-});
-
-  const japanBtn = document.getElementById('japan-button');
-
-  japanBtn.addEventListener('click', () => {
-    window.open('History_of_Japan/index.html', '_blank');
-  });
-
 
 //Recipe-Popup
 
