@@ -1,0 +1,377 @@
+/* =========================
+   RESET
+========================== */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #111;
+    background: #fff;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+
+/* =========================
+   VARIABLES
+========================== */
+
+:root {
+    --teal: #70b991;
+    --light-grey: #d9d9d9;
+    --dark-grey: #808080;
+    --max-width: 1200px;
+    --side-padding: 6%;
+}
+
+
+/* =========================
+   GENERAL
+========================== */
+
+.container {
+    width: min(var(--max-width), calc(100% - 2 * var(--side-padding)));
+    margin-inline: auto;
+}
+
+.section {
+    padding: 70px 0;
+}
+
+.image-placeholder {
+    background: var(--light-grey);
+}
+
+
+/* =========================
+   NAVBAR
+========================== */
+
+.site-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    min-height: 60px;
+    padding: 0 var(--side-padding);
+
+    color: #fff;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    font-size: 14px;
+}
+
+.nav-name {
+    position: absolute;
+    left: var(--side-padding);
+
+    font-size: 16px;
+    font-weight: 700;
+
+    opacity: 0;
+    visibility: hidden;
+
+    transition:
+        opacity 0.4s ease,
+        visibility 0.4s ease;
+}
+
+.nav-name.visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+/* =========================
+   HERO
+========================== */
+
+.hero {
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: var(--teal);
+    color: #fff;
+
+    text-align: center;
+}
+
+.hero-content {
+    width: min(700px, 85%);
+}
+
+.hero h1 {
+    margin-bottom: 15px;
+
+    font-size: clamp(2.5rem, 6vw, 5rem);
+    line-height: 1;
+}
+
+.hero p {
+    max-width: 650px;
+    margin-inline: auto;
+
+    font-size: 15px;
+    line-height: 1.4;
+}
+
+.hero-image {
+    width: 50px;
+    height: 50px;
+
+    margin: 30px auto 0;
+}
+
+
+/* =========================
+   ABOUT
+========================== */
+
+.about h2,
+.projects h2 {
+    margin-bottom: 45px;
+
+    font-size: clamp(2rem, 4vw, 3rem);
+}
+
+.about-layout {
+    display: grid;
+
+    grid-template-columns:
+        220px
+        minmax(250px, 1fr)
+        minmax(250px, 1fr);
+
+    gap: 60px;
+
+    align-items: start;
+}
+
+.about-image {
+    width: 100%;
+    aspect-ratio: 1.35 / 1;
+}
+
+
+/* Education logos */
+
+.education-logos {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 12px;
+
+    margin-top: 25px;
+}
+
+.logo-placeholder {
+    aspect-ratio: 1 / 1;
+    background: var(--light-grey);
+}
+
+
+/* About text */
+
+.about-block {
+    margin-bottom: 35px;
+}
+
+.about-block h3,
+.technical-skills h3 {
+    margin-bottom: 10px;
+
+    font-size: 20px;
+}
+
+.about-block p,
+.technical-skills li {
+    font-size: 14px;
+    line-height: 1.35;
+}
+
+.skill-group {
+    margin-bottom: 12px;
+}
+
+.skill-group h4 {
+    font-size: 14px;
+}
+
+.technical-skills ul {
+    padding-left: 20px;
+}
+
+.technical-skills li {
+    margin-bottom: 10px;
+}
+
+
+/* =========================
+   PROJECTS
+========================== */
+
+.projects h2 {
+    color: var(--teal);
+}
+
+.project-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+.project-card {
+    display: block;
+}
+
+.project-image {
+    position: relative;
+
+    aspect-ratio: 1 / 1;
+}
+
+.project-info {
+    position: absolute;
+    left: 25px;
+    bottom: 25px;
+
+    color: #fff;
+}
+
+.project-info h3 {
+    font-size: 24px;
+    margin-bottom: 3px;
+}
+
+.project-info span {
+    font-size: 13px;
+}
+
+
+/* =========================
+   FOOTER
+========================== */
+
+.site-footer {
+    min-height: 100px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: var(--teal);
+    color: #fff;
+
+    text-align: center;
+}
+
+.site-footer p {
+    font-size: 13px;
+}
+
+
+/* =========================
+   MOBILE
+========================== */
+
+@media (max-width: 700px) {
+
+    .section {
+        padding: 50px 0;
+    }
+
+    .navbar {
+        min-height: 50px;
+    }
+
+    .nav-links {
+        gap: 18px;
+    }
+
+    .nav-links a {
+        font-size: 12px;
+    }
+
+    .about-layout {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .about-visual,
+    .about-main,
+    .technical-skills {
+        width: 100%;
+    }
+
+    .about-visual {
+        order: 1;
+    }
+
+    .about-main {
+        order: 2;
+    }
+
+    .technical-skills {
+        order: 3;
+    }
+
+    .about-image {
+        width: 65%;
+        margin-inline: auto;
+    }
+
+    .education-logos {
+        width: 65%;
+        margin-inline: auto;
+    }
+
+    .project-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .project-image {
+        aspect-ratio: 16 / 9;
+    }
+
+}
