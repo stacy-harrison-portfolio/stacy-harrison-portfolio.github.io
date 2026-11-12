@@ -87,27 +87,28 @@ h2 {
 
 .portfolio-header {
     background-color: var(--color-white);
-    color: var(--color-black);
 }
 
 .portfolio-nav {
     display: flex;
-    min-height: 60px;
+    min-height: 54px;
     align-items: center;
     justify-content: space-between;
     padding-inline: 6%;
+    background-color: var(--color-white);
     font-family: Arial, sans-serif;
     font-size: 14px;
     line-height: 1.2;
 }
 
 .portfolio-nav span {
+    color: #70b991;
     font-size: 16px;
     font-weight: 700;
 }
 
 .portfolio-nav a {
-    font-size: 14px;
+    color: var(--color-black);
     text-decoration: underline;
     text-underline-offset: 3px;
 }
@@ -455,15 +456,7 @@ h2 {
 /* Responsive — mobile & small tablet (≤900px)                                */
 /* -------------------------------------------------------------------------- */
 
-@media (max-width: 700px) {
-    .portfolio-nav {
-        min-height: 50px;
-    }
-
-    .portfolio-nav a {
-        font-size: 12px;
-    }
-
+@media (max-width: 900px) {
     .section-divider {
         margin-top: clamp(0.75rem, 2.5vw, 1.25rem);
     }
@@ -543,6 +536,16 @@ h2 {
 
     .site-footer__link {
         padding-inline: var(--space-lg);
+    }
+}
+
+@media (max-width: 700px) {
+    .portfolio-nav {
+        min-height: 50px;
+    }
+
+    .portfolio-nav a {
+        font-size: 12px;
     }
 }
 

@@ -14,25 +14,24 @@ body {
 
 .portfolio-nav {
     display: flex;
-    min-height: 60px;
+    min-height: 54px;
     align-items: center;
     justify-content: space-between;
     padding-inline: 6%;
     background: #fff;
-    color: #111;
     font-family: Arial, sans-serif;
     font-size: 14px;
     line-height: 1.2;
 }
 
 .portfolio-nav span {
+    color: #70b991;
     font-size: 16px;
     font-weight: 700;
 }
 
 .portfolio-nav a {
-    color: inherit;
-    font-size: 14px;
+    color: #000;
     text-decoration: underline;
     text-underline-offset: 3px;
 }
@@ -47,6 +46,16 @@ body {
     align-items: center;
     display: flex;
 
+}
+
+@media (max-width: 700px) {
+    .portfolio-nav {
+        min-height: 50px;
+    }
+
+    .portfolio-nav a {
+        font-size: 12px;
+    }
 }
 
 .flex > * {
@@ -164,14 +173,7 @@ a {
 
 
 
-@media (max-width: 700px) {
-    .portfolio-nav {
-        min-height: 50px;
-    }
-
-    .portfolio-nav a {
-        font-size: 12px;
-    }
+@media (max-width: 768px) {
 
     .flex {
         display: block;
