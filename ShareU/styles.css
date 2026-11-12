@@ -85,6 +85,33 @@ h2 {
     font-size: var(--text-h2);
 }
 
+.portfolio-header {
+    background-color: var(--color-white);
+    color: var(--color-black);
+}
+
+.portfolio-nav {
+    display: flex;
+    min-height: 60px;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 6%;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.2;
+}
+
+.portfolio-nav span {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.portfolio-nav a {
+    font-size: 14px;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
 /* Constrain textual sections on large displays */
 .about-intro,
 .problem,
@@ -428,7 +455,15 @@ h2 {
 /* Responsive — mobile & small tablet (≤900px)                                */
 /* -------------------------------------------------------------------------- */
 
-@media (max-width: 900px) {
+@media (max-width: 700px) {
+    .portfolio-nav {
+        min-height: 50px;
+    }
+
+    .portfolio-nav a {
+        font-size: 12px;
+    }
+
     .section-divider {
         margin-top: clamp(0.75rem, 2.5vw, 1.25rem);
     }

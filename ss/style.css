@@ -36,6 +36,21 @@ a:focus-visible, button:focus-visible, .table-scroll:focus-visible {
 	outline-offset: 4px;
 }
 
+.portfolio-header { background: var(--white); }
+.portfolio-nav {
+	display: flex;
+	min-height: 60px;
+	align-items: center;
+	justify-content: space-between;
+	padding-inline: 6%;
+	background: var(--white);
+	color: var(--ink);
+	font-size: 14px;
+	line-height: 1.2;
+}
+.portfolio-nav span { font-size: 16px; font-weight: 700; }
+.portfolio-nav a { font-size: 14px; text-decoration: underline; text-underline-offset: 3px; }
+
 .hero {
 	display: flex;
 	min-height: min(500px, 72svh);
@@ -200,7 +215,7 @@ td { font-size: 14px; }
 	.faculty-gallery { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 700px) {
 	body { font-size: 15px; }
 	.hero { min-height: min(440px, 72svh); padding: 56px 24px; }
 	.hero-description { max-width: 460px; font-size: 18px; }
@@ -229,6 +244,8 @@ td { font-size: 14px; }
 	.faculty-gallery { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
 	.faculty-gallery .artwork-item { padding: 10px; }
 	.site-footer { min-height: 90px; padding-inline: 24px; }
+	.portfolio-nav { min-height: 50px; }
+	.portfolio-nav a { font-size: 12px; }
 	th, td { padding: 10px 8px; }
 }
 
@@ -238,6 +255,7 @@ td { font-size: 14px; }
 	.icon-gallery { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 	.faculty-gallery { grid-template-columns: 1fr; }
 	.site-footer { padding-inline: 18px; }
+	.portfolio-nav { padding-inline: 18px; }
 }
 
 @media (prefers-reduced-motion: reduce) {

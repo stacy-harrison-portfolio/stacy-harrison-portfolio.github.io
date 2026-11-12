@@ -164,6 +164,7 @@ img {
 
     font-size: 15px;
     line-height: 1.4;
+    text-align: right;
 }
 
 .hero-image {
@@ -462,7 +463,7 @@ img {
     /* NAVBAR */
 
     .navbar {
-        min-height: 50px;
+        min-height: 54px;
     }
 
     .nav-links {
@@ -470,7 +471,7 @@ img {
     }
 
     .nav-links a {
-        font-size: 12px;
+        font-size: 13px;
     }
 
 
@@ -502,8 +503,15 @@ img {
         order: 1;
 
         width: 100%;
+        min-height: 0;
+        align-self: flex-start;
+        text-align: left;
+    }
 
-        min-height: 180px;
+    .logos-main img {
+        width: 107%;
+        max-width: none;
+        margin-left: -7%;
     }
 
     .education {
@@ -524,6 +532,13 @@ img {
         width: 100%;
     }
 
+    .logo-placeholder img {
+        width: 96%;
+        height: 96%;
+        margin: auto;
+        object-fit: contain;
+    }
+
 
     /* PROJECTS */
 
@@ -534,7 +549,7 @@ img {
     }
 
     .project-image {
-        aspect-ratio: 16 / 9;
+        aspect-ratio: 1 / 1;
     }
 
 }
