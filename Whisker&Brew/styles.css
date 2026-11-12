@@ -1,0 +1,185 @@
+html {
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+    padding: auto;
+    margin: auto;
+    width: 100%;
+}
+
+
+/*main*/
+
+.flex {
+    padding: 8%;
+    padding-left: 10%;
+    padding-right: 2.5%;
+    align-items: center;
+    display: flex;
+
+}
+
+.flex > * {
+  min-width: 0;
+}
+
+
+.container {
+  flex: 0 0 45%;
+  min-width: 0;
+}
+
+.cat-latte {
+  flex: 0 0 55%;
+  max-width: 55%;
+  height: auto;
+  display: block;
+}
+
+
+
+
+main h1 {
+    font-size: clamp(4rem, 3.143rem + 4.286vw, 7rem);
+    line-height: clamp(3.5rem, 2.786rem + 3.571vw, 6rem);
+    font-weight: 700;
+    letter-spacing: -.25rem;
+    margin: 0;
+}
+
+main h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-top: 1.5rem;
+}
+
+
+main p {
+    font-weight: 500;
+    font-size: clamp(0.85rem, 0.736rem + 0.571vw, 1.25rem);
+}
+
+main img {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+
+/*section 1*/
+
+.mocks img {
+     aspect-ratio: 16 / 9;
+     width: 100%;
+     object-fit: cover;
+    object-position: center;
+    display: block;
+}
+
+.mocks img:first-child {
+    aspect-ratio: auto;
+    object-fit: fill;
+}
+
+/*section 2*/
+
+.wires {
+    padding: 1% 8%;
+}
+
+.wires img {
+    width: 100%;
+}
+
+.wires p {
+    font-size: 2rem;
+    line-height: 0rem;
+    padding-top: 5%;
+}
+
+
+
+/*footer*/
+
+footer {
+    align-items: center;
+    text-align: center;
+}
+
+footer img {
+    width: 100%;
+}
+
+footer .figma{
+    width: 100px;
+}
+
+footer h3 {
+    font-weight: 600;
+    margin: .5rem;
+    font-size: 1.5rem;
+}
+
+a {
+  max-width: 100%;
+  box-sizing: border-box;
+    white-space: normal;
+  word-break: break-word;
+}
+
+.prototype {
+        padding: 10%;
+}
+
+
+
+
+@media (max-width: 768px) {
+
+    .flex {
+        display: block;
+        padding: 0;
+        padding: 0rem 5%; 
+    }
+
+    .cat-latte {
+        margin-inline: auto;
+        max-width: 75%;
+    }
+
+
+    main h1 {
+        font-size: clamp(4rem, 3.143rem + 4.286vw, 7rem);
+        letter-spacing: -.1rem;
+        line-height: clamp(3.5rem, 2.786rem + 3.571vw, 6rem);
+        padding: 0;
+        margin: 0;
+
+    }
+
+    main h2 {
+        font-size: 1.6rem;
+        padding: 0;
+        margin-top: .75rem;
+    }
+
+    main p {
+        font-size: clamp(0.85rem, 0.736rem + 0.571vw, 1.25rem);
+    }
+
+    main img {
+        margin-bottom: 1.5rem;
+        padding: 0;
+    }
+
+    a {
+        font-size: small;
+    }
+
+    .wires p {
+        font-size: 1rem;
+    }
+
+
+}

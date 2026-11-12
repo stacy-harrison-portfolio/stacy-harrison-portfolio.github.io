@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Stacy Harrison Portfolio</title>
+    <title>Stacy Harrison | Portfolio</title>
 
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -16,9 +16,9 @@
     ========================== -->
 
     <header class="site-header">
+
         <nav class="navbar">
 
-            <!-- This appears after the hero is scrolled past -->
             <a href="#home" class="nav-name" id="nav-name">
                 Stacy Harrison
             </a>
@@ -30,6 +30,7 @@
             </div>
 
         </nav>
+
     </header>
 
 
@@ -54,8 +55,7 @@
                     to read, go out with her friends and drink matcha lattes.
                 </p>
 
-                <!-- Placeholder for your image -->
-                <div class="image-placeholder hero-image"></div>
+                <div class="image-placeholder hero-image"><img src="images/linkedin-logo.webp" alt="linkedin-logo"></div>
 
             </div>
 
@@ -72,80 +72,66 @@
 
                 <h2>About me</h2>
 
+
                 <div class="about-layout">
 
-                    <!-- LEFT COLUMN -->
-                    <div class="about-visual">
+                    <!--
+                        MOBILE:
+                        1. Big logos div
+                        2. Education
+                        3. Technical Skills
+                        4. Software Workflow
+                        5. Small logos div
 
-                        <!-- Main About image -->
-                        <div class="image-placeholder about-image"></div>
-
-
-                        <!-- Education / school logos -->
-                        <div class="education-logos">
-
-                            <!-- Add/remove logos whenever you want -->
-                            <div class="logo-placeholder"></div>
-                            <div class="logo-placeholder"></div>
-                            <div class="logo-placeholder"></div>
-                            <div class="logo-placeholder"></div>
-
-                            <div class="logo-placeholder"></div>
-                            <div class="logo-placeholder"></div>
-                            <div class="logo-placeholder"></div>
-                            <div class="logo-placeholder"></div>
-
-                        </div>
-
-                    </div>
+                        DESKTOP:
+                        Column 1 = Big logos + small logos
+                        Column 2 = Education + Software
+                        Column 3 = Technical Skills
+                    -->
 
 
-                    <!-- MIDDLE COLUMN -->
-                    <div class="about-main">
+                    <!-- BIG LOGOS DIV -->
 
-                        <div class="about-block">
+                    <div class="logos-main">
 
-                            <h3>Education</h3>
-
-                            <p>
-                                Stacy has studied Graphic Design offered by
-                                the Faculty of Visual Arts (FAV) at Universidad
-                                Autónoma de Nuevo León (UANL) in Monterrey.
-                            </p>
-
-                        </div>
-
-
-                        <div class="about-block">
-
-                            <h3>Software Workflow</h3>
-
-                            <div class="skill-group">
-                                <h4>Design software</h4>
-                                <p>Adobe Creative Suite, Figma</p>
-                            </div>
-
-                            <div class="skill-group">
-                                <h4>Coding</h4>
-                                <p>Visual Studio Code, Github, Git, Wordpress</p>
-                            </div>
-
-                            <div class="skill-group">
-                                <h4>Artificial Intelligence</h4>
-                                <p>Clicker, ChatGPT</p>
-                            </div>
-
-                        </div>
+                        <!--
+                            These can eventually contain whatever
+                            larger images/logos you want.
+                        -->
+                        <img src="images/fav-logo.png" alt="fav-logo">
+                        
+                        
+                        
+                        
+                        
+                        
 
                     </div>
 
 
-                    <!-- RIGHT COLUMN -->
+                    <!-- EDUCATION -->
+
+                    <div class="about-block education">
+
+                        <h3>Education</h3>
+
+                        <p>
+                            Stacy has studied Graphic Design offered by
+                            the Faculty of Visual Arts (FAV) at Universidad
+                            Autónoma de Nuevo León (UANL) in Monterrey.
+                        </p>
+
+                    </div>
+
+
+                    <!-- TECHNICAL SKILLS -->
+
                     <div class="technical-skills">
 
                         <h3>Technical Skills</h3>
 
                         <ul>
+
                             <li>
                                 100% bilingual with dual nationality
                                 (English and Spanish).
@@ -164,7 +150,71 @@
                                 Has worked on design courses like Google's
                                 UX Design program.
                             </li>
+
                         </ul>
+
+                    </div>
+
+
+                    <!-- SOFTWARE WORKFLOW -->
+
+                    <div class="about-block software-workflow">
+
+                        <h3>Software Workflow</h3>
+
+                        <div class="skill-group">
+                            <h4>Design software</h4>
+                            <p>Adobe Creative Suite, Figma</p>
+                        </div>
+
+                        <div class="skill-group">
+                            <h4>Coding</h4>
+                            <p>Visual Studio Code, Github, Git, Wordpress</p>
+                        </div>
+
+                        <div class="skill-group">
+                            <h4>Artificial Intelligence</h4>
+                            <p>Cursor, ChatGPT</p>
+                        </div>
+
+                    </div>
+
+
+                    <!-- SMALL LOGOS DIV -->
+
+                    <div class="logos-small">
+
+                        <!--
+                            Add/remove logos freely.
+                            These are individual logo slots rather
+                            than one single image.
+                        -->
+
+                        <div class="logo-placeholder">
+                            <img src="images/adobecc-logo.svg" alt="adobecc-logo">
+                        </div>
+                        <div class="logo-placeholder">
+                            <img src="images/figma-logo.png" alt="figma-logo">
+                        </div>
+                        <div class="logo-placeholder">
+                            <img src="images/vscode-logo.webp" alt="vscode-logo">
+                        </div>
+                        <div class="logo-placeholder">
+                            <img src="images/github-logo.svg" alt="github-logo">
+                        </div>
+
+                        <div class="logo-placeholder">
+                            <img src="images/git-logo.png" alt="git-logo">
+                        </div>
+                        <div class="logo-placeholder">
+                            <img src="images/wordpress-logo.webp" alt="wordpress-logo">
+                        </div>
+                        <div class="logo-placeholder">
+                            <img src="images/cursor-logo.png" alt="cursor-logo">
+                        </div>
+                        <div class="logo-placeholder">
+                            <img src="images/chatgpt-logo.webp" alt="chatgpt-logo">
+                        </div>
 
                     </div>
 
@@ -185,39 +235,84 @@
 
                 <h2>Projects</h2>
 
+
                 <div class="project-grid">
 
-                    <!-- PROJECT 1 -->
-                    <a href="#" class="project-card">
 
-                        <div class="project-image image-placeholder">
-                            <div class="project-info">
-                                <h3>Share U</h3>
-                                <span>UX/UI</span>
+                    <!-- PROJECT 1 -->
+
+                    <a href="ShareU/index.html" class="project-card">
+
+                        <div class="project-image">
+
+                            <img
+                                src="images/project-01.png"
+                                alt="Share U UX/UI project"
+                            >
+
+                            <div class="project-overlay">
+
+                                <div class="project-info">
+                                    <h3>Share U</h3>
+                                    <p>UX/UI app</p>
+                                </div>
+
                             </div>
+
                         </div>
 
                     </a>
 
 
                     <!-- PROJECT 2 -->
-                    <a href="#" class="project-card">
 
-                        <div class="project-image image-placeholder">
-                            <!-- Your project image goes here -->
+                    <a href="Whisker&Brew/index.html" class="project-card">
+
+                        <div class="project-image">
+
+                            <img
+                                src="images/project-02.png"
+                                alt="Project 2"
+                            >
+
+                            <div class="project-overlay">
+
+                                <div class="project-info">
+                                    <h3>Whisker&Brew</h3>
+                                    <p>UX/UI web</p>
+                                </div>
+
+                            </div>
+
                         </div>
 
                     </a>
 
 
                     <!-- PROJECT 3 -->
-                    <a href="#" class="project-card">
 
-                        <div class="project-image image-placeholder">
-                            <!-- Your project image goes here -->
+                    <a href="ss/index.html" class="project-card">
+
+                        <div class="project-image">
+
+                            <img
+                                src="images/project-03.png"
+                                alt="Project 3"
+                            >
+
+                            <div class="project-overlay">
+
+                                <div class="project-info">
+                                    <h3>Servicio Social</h3>
+                                    <p>Community Service</p>
+                                </div>
+
+                            </div>
+
                         </div>
 
                     </a>
+
 
                 </div>
 
@@ -233,14 +328,11 @@
     ========================== -->
 
     <footer class="site-footer">
+
         <p>Stacy Harrison Portfolio 2026</p>
+
     </footer>
 
-
-    <!-- =========================
-         JAVASCRIPT
-         Hero / navbar behavior
-    ========================== -->
 
     <script src="script.js"></script>
 
