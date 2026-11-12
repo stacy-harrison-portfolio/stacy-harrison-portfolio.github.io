@@ -36,7 +36,12 @@ a:focus-visible, button:focus-visible, .table-scroll:focus-visible {
 	outline-offset: 4px;
 }
 
-.portfolio-header { background: var(--white); }
+.portfolio-header {
+	position: sticky;
+	top: 0;
+	z-index: 1000;
+	background: var(--white);
+}
 .portfolio-nav {
 	display: flex;
 	min-height: 54px;
