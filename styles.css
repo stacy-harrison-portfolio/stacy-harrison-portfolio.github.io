@@ -57,6 +57,16 @@ img {
     padding: 70px 0;
 }
 
+@media (min-width: 701px) {
+    .about.section {
+        padding-bottom: 30px;
+    }
+
+    .projects.section {
+        padding-top: 30px;
+    }
+}
+
 /* =========================
    NAVBAR
 ========================== */
